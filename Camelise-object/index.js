@@ -14,9 +14,7 @@ export const camelise = (obj) => {
       }
       
       if (value && typeof value == "object" && !Array.isArray(value)) {
-        console.log(value)
         newValue = camelise(value)
-        console.log(newValue)
       }
       
       newObj[newKey] = newValue
